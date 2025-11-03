@@ -41,8 +41,8 @@ app.post("/api/records", (req, res) => {
 
     // 进行处理，并返回结果
     const result = {
-        code: 0,
-        message: "POST请求成功",
+        ret: 0,
+        err: "POST请求成功",
         data: getTableRecords(),
     };
     res.status(200).json(result);
